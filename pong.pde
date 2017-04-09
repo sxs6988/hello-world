@@ -15,7 +15,7 @@ int paddleWidth = 15;
 
 int playerOneScore = 0;
 int playerTwoScore = 0;
-boolean mill = mill-timerReset;
+int mill;
 int timerReset =0;
 
 void setup() {
@@ -24,6 +24,7 @@ void setup() {
 
 void draw() {
   background(#FF0307);
+ mill = millis();
 
   if (keyPressed) {
     if (keyCode == UP) {
@@ -84,7 +85,7 @@ playerTwoY = ballY - 20;
     }
 
     xSpeed = xSpeed * -1;
-    
+
   }
 
   textSize(36);
