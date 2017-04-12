@@ -24,6 +24,12 @@ void setup() {
 
 void draw() {
   background(#FF0307);
+    if (keyPressed == true && key == 'a') {
+
+       background(0,250,0);
+       } else if (keyPressed == true && key == 'b') {
+         background(0,0,250);
+       }
  mill = millis();
 
   if (keyPressed) {
